@@ -1,4 +1,7 @@
 function duplicateCount(text){
+    //best practice 
+    const findOdd = (xs) => xs.reduce((a, b) => a ^ b);
+
     let result = 0;
     let numberOfDuplicate = 0;
     let texta = text.toLowerCase();
@@ -20,4 +23,4 @@ function duplicateCount(text){
     }
      return result;
   }
-​
+​//
