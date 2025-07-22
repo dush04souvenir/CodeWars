@@ -1,5 +1,8 @@
 function findOdd(A) {
-  //happy coding!
+ 
+     //best practice 
+    const findOdd = (xs) => xs.reduce((a, b) => a ^ b);
+   //happy coding!
   let uniqueA = new Set(A);
   let uniqueArray = [...uniqueA]
   for(let i = 0; i < uniqueArray.length; i++){
